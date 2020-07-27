@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+#wrap {
+    position: relative;
+}
+
+#head {
+    animation-delay: 200ms;
+    animation: fadeInDown 3s;
+    visibility: visible;
+}
+
+#headBanner {
+    height: 80px;
+    width: 100%;
+}
+
+#headBanner .logo-left {
+    float: left;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#headBanner .logo-right {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#headBanner button {
+    background-color: #1DD8DA;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+}
+
+#headMenu {
+    height: 40px;
+    line-height: 40px;
+}
+
+#headMenu .menu-left {
+    clear: both;
+    float: left;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+}
+
+#headMenu .menu-right {
+    float: right;
+    margin-right: 50px;
+}
+
+#headMenu .games {
+    position: relative;
+}
+
+.menu-left div {
+    padding-right: 15px;
+}
+
+.menu-right i {
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #545454;
+    display: inline-block;
+}
+
+.games .dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    z-index: 2;
+    color: black;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 10px;
+    padding-top: 14px;
+}
+
+#headMenu .menu-left .games:hover .dropdown-content {
+    visibility: visible;
+}
+
+a:hover,
+.menu-right i:hover {
+    color: #1DD8DA;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#session-1 {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    background-image: url('img/bg-img/2.jpg');
+    height: 790px;
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+    /* filter: contrast(1.8) brightness(0.5); */
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.thepower {
+    clear: both;
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    top: 280px;
+    left: 80px;
+    border-left: 3px solid #1DD8DA;
+    padding: 45px 40px 40px 40px;
+    background-color: black;
+    color: #ffffff;
+    opacity: 0.8;
+    filter: none;
+}
+
+.thepower p {
+    opacity: 0.8;
+}
+
+.next-button {
+    position: absolute;
+    right: 70px;
+    top: 410px;
+}
+
+.next-button button {
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #1DD8DA;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.next-button button:hover,
+#headBanner .logo-right:hover,
+#view-game button:hover {
+    background-color: black;
+    color: #ffffff;
+    opacity: 0.8;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+
+/* View game */
+
+#view-game {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    animation-delay: 5s;
+    animation: fadeInUp 4s;
+    visibility: visible;
+}
+
+#view-game .square img {
+    width: 210px;
+    height: 70px;
+    display: block;
+    margin-left: 35px;
+}
+
+#view-game .square {
+    width: 280px;
+    padding: 29px;
+    text-align: center;
+    border-right: 1px solid black;
+    height: 120px;
+}
+
+#view-game .square:last-child {
+    border-right: none;
+}
+
+#view-game button {
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #1DD8DA;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
