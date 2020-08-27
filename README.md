@@ -1,2 +1,2 @@
 # study-git
-Kho chua series
+Kho chua 
